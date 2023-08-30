@@ -20,10 +20,10 @@ const Principal = () => {
   }, [count]);
 
   const redirectPage = () => {
-    window.location = "https://www.google.com";
+    window.location = "https://api.whatsapp.com/send?phone=5521982065489&text=A%20sua%20Solu%C3%A7%C3%A3o%20est%C3%A1%20aqui!%20Fale%20comigo%20agora%20mesmo.%20";
   }
 
-  //setTimeout(redirectPage, 4000);
+  setTimeout(redirectPage, 4000);
 
 
   return (
@@ -37,8 +37,8 @@ const Principal = () => {
               </a>
             </div>
             
-            <div className="section-title flex flex-center">
-              <h1 className=""> Obrigado por confiar em nosso trabalho! </h1>
+            <div className="section-title flex flex-center text-center px">
+              <h1 > Obrigado por confiar em nosso trabalho! </h1>
               <p className="fs-36 fw-5"> {count} </p>
               <p className="fs-22 fw-5"> Aguarde... </p>
               <p className="fs-22 fw-5"> Você será redirecionado para um Atendente via <span className="fw-7 text-cap"> whatsapp </span> </p>
